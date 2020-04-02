@@ -1,0 +1,33 @@
+using System;
+using System.Globalization;
+
+
+namespace Exc005
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int cod1, cod2, qnt1, qnt2;
+            double val1, val2, total;
+
+
+            string[] valores = Console.ReadLine().Split(' ');
+            cod1 = int.Parse(valores[0]);
+            qnt1 = int.Parse(valores[1]);
+            val1 = double.Parse(valores[2], CultureInfo.InvariantCulture);
+
+            valores = Console.ReadLine().Split();
+            cod2 = int.Parse(valores[0]);
+            qnt2 = int.Parse(valores[1]);
+            val2 = double.Parse(valores[2], CultureInfo.InvariantCulture);
+
+
+            total = qnt1 * val1 + qnt2 * val2;
+
+
+            Console.WriteLine(" Valor a pagar R$" + total.ToString("F2", CultureInfo.InvariantCulture));
+
+      }
+    }
+}
