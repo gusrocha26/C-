@@ -1,0 +1,29 @@
+using System;
+
+namespace ExcCond003
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] valores = Console.ReadLine().Split(' ');
+            int horaInicial = int.Parse(valores[0]);
+            int horaFinal = int.Parse(valores[1]);
+
+
+            int horaTotal;
+
+            if (horaInicial < horaFinal)
+            {
+                horaTotal = horaFinal - horaInicial;
+
+            }
+             else{
+
+                horaTotal = 24 - horaFinal + horaInicial;
+            }
+
+            Console.WriteLine(" O JOGO DUROU " + horaTotal + "HORAS(S)");
+        }
+    }
+}
