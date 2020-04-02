@@ -1,0 +1,45 @@
+using System;
+
+namespace Excwh001
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double X, Y;
+
+            string[] valores = Console.ReadLine().Split(' ');
+            X = double.Parse(valores[0]);
+            Y = double.Parse(valores[1]);
+
+            while (X != 0 && Y != 0)
+            {
+                if (X > 0 && Y > 0)
+                {
+                    Console.WriteLine("Primeiro quadrante");
+                }
+                else if (X < 0 && Y > 0)
+                {
+                    Console.WriteLine("Segundo quadrante");
+                }
+                else if ( X < 0 && Y < 0)
+                {
+                    Console.WriteLine("Terceiro quadrante");
+                }
+                else
+                {
+                    Console.WriteLine("Quarto quadrante");
+                }
+
+                valores = Console.ReadLine().Split(' ');
+                X = double.Parse(valores[0]);
+                Y = double.Parse(valores[1]);
+
+
+            }
+
+
+
+        }
+    }
+}
