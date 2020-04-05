@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Globalization;
 
-namespace excClasses002
+namespace excercicio008
 {
     class pessoas
     {
@@ -14,7 +14,7 @@ namespace excClasses002
 
 
 
-namespace excClasses002
+namespace excercicio008
 {
     class Program
     {
